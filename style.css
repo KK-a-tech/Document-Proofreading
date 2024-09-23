@@ -1,7 +1,13 @@
 @charset "utf-8";
+
+/* common */
+
 body {
   margin: 0;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0;
+
+  width: 1000px;
+  margin-inline: auto;
 }
 
 textarea {
@@ -16,7 +22,7 @@ textarea {
   margin-top: 1rem;
 }
 
-del {
+/* del {
   background-color: #ff8b8b;
   text-decoration: none;
 }
@@ -25,4 +31,49 @@ ins {
   background-color: #80fc8b;
   text-decoration: none;
   color: gray;
+} */
+
+line{
+  color: gray;
+}
+.upper-line{
+  margin-top: 20px;
+}
+
+/* header */
+
+.inner_title{
+  color: white;
+  background-color: gray;
+  height: 80px;
+  margin: 0;
+  line-height: 80px;
+
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+}
+
+/* kensanaiyou */
+.kensa-naiyou{
+  margin: 0;
+}
+
+/* form */
+.kousei_form{
+  border: 1px, dashed, gray;
+  border-radius: 20px;
+  padding: 0 20px 20px;
+}
+
+/* footer */
+
+footer{
+  height: 80px;
+  background-color: gray;
+  margin-top: 20px;
+
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
 }

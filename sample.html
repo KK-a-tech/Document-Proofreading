@@ -9,47 +9,60 @@
     <script src="./kousei.js"></script>
   </head>
   <body>
-    <h1>校正くん(仮)</h1>
-    <img href="">
-    <p>
-      本コンテンツは校正支援ツールとしてご利用ください。<br>
-      「yahoo!テキスト解析 Web API 校正支援(V2)」を用いた文章校正機能をご提供しております。
-    </p>
-    <section>
-      ※入力したデータは入力した情報はYahoo! JAPANへ送信されます。通信は暗号化されていますが、Yahoo! JAPANに保存される可能性はありますのでご注意ください。
-    </section>
-    <h2>文章入力フォーム</h2>
-    <p>フォームに入力し、「校正開始」ボタンをクリックしてください。</p>
-    <textarea id="input-text" placeholder="ここにテキストをペーストしてください。"></textarea>
-    <button onclick="proofreading_execution()">校正開始</button>
-    <h2>校正案</h2>
-    <p>
-      校正案を表示しております。<br>
-      校正案から修正したい箇所をチェックボックスより修正ください。<br>
-      全て修正したい場合は「一括承認」をご利用ください。
-    </p>
-    <div id="view"></div>
-    <button onclick="set_checkboxes(true)">一括承認</button>
-    <button onclick="set_checkboxes(false)">承認リセット</button>
-    <h2>校正結果出力</h2>
-    <p>「コピー」ボタンをクリックすると校正後の文章をクリップボードにコピーします。</p>
-    <textarea id="output-text" placeholder="ここにテキストが出力されます。"></textarea>
-    <button onclick="navigator.clipboard.writeText(document.getElementById('output-text').value)">コピー</button>
-    <h2>検査内容</h2>
-    <ul>
-      <li>
-        表記・表現の間違い、不適切な表現の検出<br>
-        … 誤変換、誤用、使用注意語、不快語 (使用不適切な語や隠語など)、機種依存文字または拡張文字、外国地名、固有名詞、人名、ら抜き言葉
-      </li>
-      <li>
-        わかりやすい表記にするための提案<br>
-        … 当て字、表外漢字、用字
-      </li>
-      <li>
-        文章をよりよくするための提案<br>
-        … 用語言い換え、二重否定、助詞不足の可能性あり、冗長表現、略語
-      </li>
-    </ul>
+    <div class="inner">
+      <h1 class="inner_title">校正くん(仮)</h1>
+      <!-- <img href=""> -->
+      <p class="">
+        本コンテンツは校正支援ツールとしてご利用ください。<br>
+        「yahoo!テキスト解析 Web API 校正支援(V2)」を用いた文章校正機能をご提供しております。
+      </p>
+      <small>
+        ※入力したデータは入力した情報はYahoo! JAPANへ送信されます。通信は暗号化されていますが、Yahoo! JAPANに保存される可能性はありますのでご注意ください。
+      </small>
+    </div>
+
+    <div class="inner">
+      <hr class="line upper-line">
+      <h2 class="inner_kensa-naiyou">検査内容</h2>
+      <hr class="line douner-line">
+      <ul>
+        <li>
+          表記・表現の間違い、不適切な表現の検出<br>
+          … 誤変換、誤用、使用注意語、不快語 (使用不適切な語や隠語など)、機種依存文字または拡張文字、外国地名、固有名詞、人名、ら抜き言葉
+        </li>
+        <li>
+          わかりやすい表記にするための提案<br>
+          … 当て字、表外漢字、用字
+        </li>
+        <li>
+          文章をよりよくするための提案<br>
+          … 用語言い換え、二重否定、助詞不足の可能性あり、冗長表現、略語
+        </li>
+      </ul>
+    </div>
+
+    <div class="inner">
+      <div class="kousei_form">
+        <h2>文章入力フォーム</h2>
+        <p>フォームに入力し、「校正開始」ボタンをクリックしてください。</p>
+        <textarea id="input-text" placeholder="ここにテキストをペーストしてください。"></textarea>
+        <button onclick="proofreading_execution()">校正開始</button>
+        <h2>校正案</h2>
+        <p>
+          校正案を表示しております。<br>
+          校正案から修正したい箇所をチェックボックスより修正ください。<br>
+          全て修正したい場合は「一括承認」をご利用ください。
+        </p>
+        <div id="view"></div>
+        <button onclick="set_checkboxes(true)">一括承認</button>
+        <button onclick="set_checkboxes(false)">承認リセット</button>
+        <h2>校正結果出力</h2>
+        <p>「コピー」ボタンをクリックすると校正後の文章をクリップボードにコピーします。</p>
+        <textarea id="output-text" placeholder="ここにテキストが出力されます。"></textarea>
+        <button onclick="navigator.clipboard.writeText(document.getElementById('output-text').value)">コピー</button>
+      </div>
+    </div>
+
   </body>
   <footer>
 
