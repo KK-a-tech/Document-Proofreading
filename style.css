@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(252, 247, 239);
 
   width: 1000px;
   margin-inline: auto;
@@ -44,7 +45,7 @@ line{
 
 .inner_title{
   color: white;
-  background-color: gray;
+  background-color: rgb(8, 36, 73);
   height: 80px;
   margin: 0;
   line-height: 80px;
@@ -54,9 +55,22 @@ line{
   padding-left: calc(50vw - 50%);
 }
 
+.inner_explane{
+  margin: 20px 0 0;
+}
+
+.inner_notes{
+  margin-top: 16px;
+  font-size: 14px;
+}
+
 /* kensanaiyou */
 .kensa-naiyou{
   margin: 0;
+}
+
+.list:first-child{
+  margin-top: 20px;
 }
 
 /* form */
@@ -64,13 +78,22 @@ line{
   border: 1px, dashed, gray;
   border-radius: 20px;
   padding: 0 20px 20px;
+  margin-top: 20px;
+}
+
+.form-subtitle{
+  margin-top: 20px;
+}
+
+.form-expline{
+  margin-top: 20px;
 }
 
 /* footer */
 
 footer{
   height: 80px;
-  background-color: gray;
+  background-color: rgb(8, 36, 73);
   margin-top: 20px;
 
   width: 100vw;
