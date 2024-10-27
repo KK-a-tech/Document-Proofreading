@@ -8,7 +8,7 @@ body {
   background-color: rgb(252, 247, 239);
 }
 
-.inner{
+.inner {
   margin: 0;
   padding: 0 60px;
   background-color: rgb(252, 247, 239);
@@ -40,15 +40,15 @@ ins {
   color: gray;
 } */
 
-line{
+line {
   color: gray;
 }
-.upper-line{
+.upper-line {
   margin-top: 20px;
 }
 
 /* header */
-header{
+header {
   text-align: center;
   color: white;
   background-color: rgb(8, 36, 73);
@@ -57,47 +57,47 @@ header{
   line-height: 80px;
 }
 
-.inner_title{
+.inner_title {
   margin: 0;
 }
 
-.inner_explane{
+.inner_explane {
   margin: 20px 0 0;
 }
 
-.inner_notes{
+.inner_notes {
   margin-top: 16px;
   font-size: 14px;
 }
 
 /* kensanaiyou */
-.kensa-naiyou{
+.kensa-naiyou {
   margin: 0;
 }
 
-.list:first-child{
+.list:first-child {
   margin-top: 20px;
 }
 
 /* form */
-.kousei_form{
+.kousei_form {
   border: 1px, dashed, gray;
   border-radius: 20px;
   padding: 0 20px 20px;
   margin-top: 20px;
 }
 
-.form-subtitle{
+.form-subtitle {
   margin-top: 20px;
 }
 
-.form-expline{
+.form-expline {
   margin-top: 20px;
 }
 
 /* footer */
 
-footer{
+footer {
   height: 80px;
   background-color: rgb(8, 36, 73);
   margin-top: 20px;
