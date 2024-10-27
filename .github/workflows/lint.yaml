@@ -18,6 +18,9 @@ jobs:
     - name: Check Node.js version
       run: node -v
 
+    - name: Clear npm cache
+      run: npm cache clean --force
+
     - name: Install dependencies
       run: npm install
 
