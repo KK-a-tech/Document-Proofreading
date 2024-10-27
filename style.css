@@ -6,8 +6,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(252, 247, 239);
+}
 
-  width: 1000px;
+.inner{
+  margin: 0;
+  padding: 0 60px;
+  background-color: rgb(252, 247, 239);
+
   margin-inline: auto;
 }
 
@@ -42,17 +47,17 @@ line{
 }
 
 /* header */
-
-.inner_title{
+header{
+  text-align: center;
   color: white;
   background-color: rgb(8, 36, 73);
   height: 80px;
   margin: 0;
   line-height: 80px;
+}
 
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding-left: calc(50vw - 50%);
+.inner_title{
+  margin: 0;
 }
 
 .inner_explane{
@@ -95,8 +100,4 @@ footer{
   height: 80px;
   background-color: rgb(8, 36, 73);
   margin-top: 20px;
-
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding-left: calc(50vw - 50%);
 }
