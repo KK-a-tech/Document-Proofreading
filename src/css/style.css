@@ -1,7 +1,19 @@
 @charset "utf-8";
+
+/* common */
+
 body {
   margin: 0;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0;
+  background-color: rgb(252, 247, 239);
+}
+
+.inner {
+  margin: 0;
+  padding: 0 60px;
+  background-color: rgb(252, 247, 239);
+
+  margin-inline: auto;
 }
 
 textarea {
@@ -17,7 +29,7 @@ textarea {
   margin-top: 1rem;
 }
 
-del {
+/* del {
   background-color: #ff8b8b;
   text-decoration: none;
 }
@@ -26,4 +38,67 @@ ins {
   background-color: #80fc8b;
   text-decoration: none;
   color: gray;
+} */
+
+line {
+  color: gray;
+}
+.upper-line {
+  margin-top: 20px;
+}
+
+/* header */
+header {
+  text-align: center;
+  color: white;
+  background-color: rgb(8, 36, 73);
+  height: 80px;
+  margin: 0;
+  line-height: 80px;
+}
+
+.inner_title {
+  margin: 0;
+}
+
+.inner_explane {
+  margin: 20px 0 0;
+}
+
+.inner_notes {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+/* kensanaiyou */
+.kensa-naiyou {
+  margin: 0;
+}
+
+.list:first-child {
+  margin-top: 20px;
+}
+
+/* form */
+.kousei_form {
+  border: 1px, dashed, gray;
+  border-radius: 20px;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+}
+
+.form-subtitle {
+  margin-top: 20px;
+}
+
+.form-expline {
+  margin-top: 20px;
+}
+
+/* footer */
+
+footer {
+  height: 80px;
+  background-color: rgb(8, 36, 73);
+  margin-top: 20px;
 }

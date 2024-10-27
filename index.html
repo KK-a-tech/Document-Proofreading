@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>校正くん</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="inner_title">校正くん</h1>
+    </header>
+    <main>
+      <div class="inner">
+        <!-- <img href=""> -->
+        <hr class="line upper-line" />
+        <h2>はじめに</h2>
+        <hr class="line douner-line" />
+        <p class="inner_explane">
+          本コンテンツは校正支援ツールとしてご利用ください。<br />
+          「yahoo!テキスト解析 Web API
+          校正支援(V2)」を用いた文章校正機能をご提供しております。
+        </p>
+        <p class="inner_notes">
+          ※入力したデータは入力した情報はYahoo! JAPANへ送信されます。
+          通信は暗号化されていますが、Yahoo!
+          JAPANに保存される可能性はありますのでご注意ください。
+        </p>
+      </div>
+      <div class="inner">
+        <hr class="line upper-line" />
+        <h2 class="inner_kensa-naiyou">検査内容</h2>
+        <hr class="line douner-line" />
+        <ul>
+          <li class="list">
+            表記・表現の間違い、不適切な表現の検出<br />
+            … 誤変換、誤用、使用注意語、不快語
+            (使用不適切な語や隠語など)、機種依存文字または拡張文字、外国地名、固有名詞、人名、ら抜き言葉
+          </li>
+          <li class="list">
+            わかりやすい表記にするための提案<br />
+            … 当て字、表外漢字、用字
+          </li>
+          <li class="list">
+            文章をよりよくするための提案<br />
+            … 用語言い換え、二重否定、助詞不足の可能性あり、冗長表現、略語
+          </li>
+        </ul>
+      </div>
+      <div class="inner">
+        <div class="kousei_form">
+          <h2 class="form-subtitle">文章入力フォーム</h2>
+          <p class="form-expline">
+            フォームに入力し、「校正開始」ボタンをクリックしてください。
+          </p>
+          <textarea
+            id="input-text"
+            placeholder="ここにテキストをペーストしてください。"
+          ></textarea>
+          <button onclick="proofreading_execution()">校正開始</button>
+          <h2 class="form-subtitle">校正案</h2>
+          <p class="form-expline">
+            校正案を表示しております。<br />
+            校正案から修正したい箇所をチェックボックスより修正ください。<br />
+            全て修正したい場合は「一括承認」をご利用ください。
+          </p>
+          <div id="view"></div>
+          <button onclick="set_checkboxes(true)">一括承認</button>
+          <button onclick="set_checkboxes(false)">承認リセット</button>
+          <h2 class="form-subtitle">校正結果出力</h2>
+          <p class="form-expline">
+            「コピー」ボタンをクリックすると校正後の文章をクリップボードにコピーします。
+          </p>
+          <textarea
+            id="output-text"
+            placeholder="ここにテキストが出力されます。"
+          ></textarea>
+          <button
+            onclick="navigator.clipboard.writeText(document.getElementById('output-text').value)"
+          >
+            コピー
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
